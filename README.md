@@ -1,2 +1,3 @@
 # ProjectTemplate-Vue
- A template of vue project with auto routing.
+
+A project template of vue with auto routing
