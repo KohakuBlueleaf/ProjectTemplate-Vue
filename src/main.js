@@ -1,3 +1,6 @@
+const $ = require('jquery')
+window.$ = $
+
 import { createApp } from 'vue'
 import App from './App.vue'
 
