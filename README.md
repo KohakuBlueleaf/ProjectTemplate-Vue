@@ -16,3 +16,5 @@ A project template of vue with some useful plugin and addons
 :   for nuxt-like layout system
 * vite-plugin-commonjs & plugin-commonjs
 :   for commonJs module
+* vite-plugin-compression
+:   for compressing the built files
