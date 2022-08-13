@@ -14,7 +14,10 @@ const router = createRouter({
   routes,
 })
 
-import './assets/main.css'
+
+import 'bootstrap/dist/css/bootstrap.min.css'
+import '@/assets/main.css'
+import 'bootstrap'
 
 const app = createApp(App)
 
