@@ -22,6 +22,7 @@
     "vite": "^3.0.1",
     "vite-plugin-compression": "^0.5.1",
     "vite-plugin-pages": "^0.25.0",
+    "vite-plugin-pwa": "^0.12.3",
     "vite-plugin-vue-layouts": "^0.7.0",
     "vue-router": "^4.1.3"
   }

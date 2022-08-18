@@ -13,6 +13,8 @@ import viteCompression from 'vite-plugin-compression';
 import { viteCommonjs } from '@originjs/vite-plugin-commonjs'
 import commonjs from '@rollup/plugin-commonjs';
 
+import { VitePWA } from 'vite-plugin-pwa'
+
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -28,7 +30,37 @@ export default defineConfig({
     Components({
       resolvers: [ElementPlusResolver()]
     }),
-    viteCompression()
+    viteCompression(),
+    VitePWA({
+      registerType: 'autoUpdate',
+      base: '/',
+      manifest: {
+        theme_color: '#1d2630',
+        icons: [
+          {
+            src: 'haku-river144x144.png',
+            sizes: '144x144',
+            type: 'image/png',
+          },
+          {
+            src: 'haku-river512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+          {
+            src: 'haku-river512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'any maskable',
+          },
+        ],
+      },
+      devOptions: {
+        enabled: true,
+        type: 'module',
+        navigateFallback: 'index.html',
+      }
+    })
   ],
   resolve: {
     alias: {
