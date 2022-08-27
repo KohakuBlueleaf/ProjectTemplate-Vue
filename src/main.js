@@ -1,3 +1,5 @@
+import '@/utils'
+
 const $ = require('jquery')
 window.$ = $
 
@@ -14,9 +16,7 @@ const router = createRouter({
   routes,
 })
 
-
-import 'bootstrap/dist/css/bootstrap.min.css'
-import '@/assets/main.css'
+import '../scss/custom.scss'
 import 'bootstrap'
 
 const app = createApp(App)

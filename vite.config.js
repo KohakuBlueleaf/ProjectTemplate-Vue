@@ -32,6 +32,10 @@ export default defineConfig({
     }),
     viteCompression(),
     VitePWA({
+      workbox: {
+        //loading all html, css, js... files under /dist folder
+        globPatterns: ['**/*.{html,css,js,svg,png,ico}'],
+      },
       registerType: 'autoUpdate',
       base: '/',
       manifest: {
